@@ -5,6 +5,10 @@ app_description = "A Frappe app to Manage URLs"
 app_email = "1410axis@gmail.com"
 app_license = "mit"
 
+
+website_path_resolver = "links_manager.utils.path_resolver"
+
+
 # Apps
 # ------------------
 
@@ -241,4 +245,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

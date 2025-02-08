@@ -18,3 +18,76 @@ build-backend = "flit_core.buildapi"
 # These dependencies are only installed when developer mode is enabled
 [tool.bench.dev-dependencies]
 # package_name = "~=1.1.0"
+
+typing-modules = ["frappe.types.DF"]
+
+
+[tool.ruff]
+line-length = 150
+target-version = "py312"
+exclude = [
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".tox",
+    ".venv",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "migrations",
+    "backup",
+    "venv",
+    "site-packages",
+    "README.md",
+    "license.txt",
+    ".gitignore",
+    "pyproject.toml"
+]
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle
+    "F",  # pyflakes
+]
+ignore = []
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+
+
+
+
+[tool.black]
+line-length = 150
+target-version = ['py37']
+skip-string-normalization = true
+exclude = '''
+(
+  /(
+      \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | migrations
+    | backup
+    | venv
+    | site-packages
+    | README\.md
+    | license\.txt
+    | \.gitignore
+    | pyproject\.toml
+  )/
+  | README\.md
+  | license\.txt
+  | pyproject\.toml
+)
+'''
+fast = true
