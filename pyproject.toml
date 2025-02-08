@@ -50,44 +50,8 @@ select = [
     "E",  # pycodestyle
     "F",  # pyflakes
 ]
-ignore = []
 
 
 [tool.ruff.format]
 quote-style = "double"
-indent-style = "tab"
-
-
-
-
-[tool.black]
-line-length = 150
-target-version = ['py37']
-skip-string-normalization = true
-exclude = '''
-(
-  /(
-      \.git
-    | \.hg
-    | \.mypy_cache
-    | \.tox
-    | \.venv
-    | _build
-    | buck-out
-    | build
-    | dist
-    | migrations
-    | backup
-    | venv
-    | site-packages
-    | README\.md
-    | license\.txt
-    | \.gitignore
-    | pyproject\.toml
-  )/
-  | README\.md
-  | license\.txt
-  | pyproject\.toml
-)
-'''
-fast = true
+skip-magic-trailing-comma = true

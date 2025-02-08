@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestShortLink(FrappeTestCase):
+class TestShortLinkClick(FrappeTestCase):
     pass

@@ -1,83 +1,64 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "field:short_link",
- "creation": "2025-02-08 10:53:32.470835",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "destination_url",
-  "status",
-  "column_break_ugdl",
-  "short_link",
-  "description"
- ],
- "fields": [
-  {
-   "fieldname": "destination_url",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Destination URL",
-   "options": "URL",
-   "reqd": 1
-  },
-  {
-   "fieldname": "short_link",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Short Link",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
-   "fieldname": "column_break_ugdl",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
-  },
-  {
-   "default": "Enabled",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Enabled\nDisabled"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-02-08 10:58:37.644604",
- "modified_by": "Administrator",
- "module": "Links Manager",
- "name": "Short Link",
- "naming_rule": "By fieldname",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [
-  {
-   "color": "Green",
-   "title": "Enabled"
-  },
-  {
-   "color": "Red",
-   "title": "Disabled"
-  }
- ]
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "field:short_link",
+	"creation": "2025-02-08 10:53:32.470835",
+	"doctype": "DocType",
+	"engine": "MyISAM",
+	"field_order": ["destination_url", "status", "column_break_ugdl", "short_link", "description"],
+	"fields": [
+		{
+			"fieldname": "destination_url",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Destination URL",
+			"options": "URL",
+			"reqd": 1
+		},
+		{
+			"fieldname": "short_link",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Short Link",
+			"reqd": 1,
+			"unique": 1
+		},
+		{ "fieldname": "column_break_ugdl", "fieldtype": "Column Break" },
+		{ "fieldname": "description", "fieldtype": "Small Text", "label": "Description" },
+		{
+			"default": "Enabled",
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Enabled\nDisabled"
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"links": [{ "link_doctype": "Short Link Click", "link_fieldname": "short_link" }],
+	"modified": "2025-02-08 11:47:37.731605",
+	"modified_by": "Administrator",
+	"module": "Links Manager",
+	"name": "Short Link",
+	"naming_rule": "By fieldname",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"share": 1,
+			"write": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [
+		{ "color": "Green", "title": "Enabled" },
+		{ "color": "Red", "title": "Disabled" }
+	]
 }

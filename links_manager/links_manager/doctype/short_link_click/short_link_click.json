@@ -1,0 +1,79 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"creation": "2025-02-08 11:03:27.421337",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"column_break_nqah",
+		"ip_address",
+		"user_agent",
+		"short_link",
+		"column_break_oane",
+		"referrer",
+		"utm",
+		"section_break_fvnm",
+		"amended_from"
+	],
+	"fields": [
+		{ "fieldname": "section_break_fvnm", "fieldtype": "Section Break" },
+		{
+			"fieldname": "amended_from",
+			"fieldtype": "Link",
+			"label": "Amended From",
+			"no_copy": 1,
+			"options": "Short Link Click",
+			"print_hide": 1,
+			"read_only": 1,
+			"search_index": 1
+		},
+		{
+			"fieldname": "ip_address",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"in_standard_filter": 1,
+			"label": "IP Address"
+		},
+		{ "fieldname": "user_agent", "fieldtype": "Small Text", "label": "User Agent", "read_only": 1 },
+		{ "fieldname": "column_break_oane", "fieldtype": "Column Break" },
+		{ "fieldname": "referrer", "fieldtype": "Data", "label": "Referrer", "read_only": 1 },
+		{ "fieldname": "utm", "fieldtype": "Data", "label": "UTM", "read_only": 1 },
+		{
+			"fieldname": "short_link",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"in_standard_filter": 1,
+			"label": "Short Link",
+			"options": "Short Link",
+			"read_only": 1,
+			"reqd": 1
+		},
+		{ "fieldname": "column_break_nqah", "fieldtype": "Column Break", "read_only": 1 }
+	],
+	"index_web_pages_for_search": 1,
+	"is_submittable": 1,
+	"links": [],
+	"modified": "2025-02-08 11:46:38.784904",
+	"modified_by": "Administrator",
+	"module": "Links Manager",
+	"name": "Short Link Click",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"share": 1,
+			"submit": 1,
+			"write": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": []
+}

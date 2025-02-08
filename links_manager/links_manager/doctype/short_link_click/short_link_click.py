@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ShortLink(Document):
+class ShortLinkClick(Document):
     pass
